@@ -28,6 +28,7 @@ class Students {
 };
 int main() // создадим пустого студента и принесем в жертву Коровкину
 {    
+	// сработает ли?
 	Students Students1;
 	delete &Students1;
 }
