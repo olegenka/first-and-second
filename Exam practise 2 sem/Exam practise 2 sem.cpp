@@ -2,35 +2,67 @@
 #include <iostream>
 using namespace std;
 #include <string>
-class Students {
+
+int school_popularity = 0;
+
+class Students{
 	// Имя студента
-	public: string name;
+	public: 
+         string name;
 	// Фамилия
 	std::string last_name;
 	// Пять промежуточных оценок студента
-	int scores[5];
+	int marks[5]{ 0,0,0,0,0 };
 	// Итоговая оценка за семестр
-	Students(int t=0) // без описания равно 0
+	float End_score(int marks[])
 	{
-		average_ball = t;
+		float t = 0;
+		for (int i = 0; i < 5; i++)
+		{
+			t = t + marks[i];
+		}
+		return t/5;
 	}
-	Students(double t) // перегрузка
+
+	int ID; //id студента
+
+
+	Students(string name = "no_name", string lastname = "no_lastname" ) // без описания равно 0 - конструктор
 	{
-		average_ball = t;
+		name = "no_name";
+		last_name = "no_lastname";
+		school_popularity++;
+		float score = End_score(marks);
+		ID = school_popularity;
 	}
+
 	~Students() // деструктор
 	{
-		cout << "kill yourself";
+		cout << "kill student";
+		school_popularity--;
 	}
     private: float average_ball;
 			
     
 };
-int main() // создадим пустого студента и принесем в жертву Коровкину
+
+
+//template <typename T>
+//T best_student(Students study_people [], int number)
+//{
+//  
+//}
+
+
+int main() // создадим пустого студента и принесем в жертву 
 {    
-	// сработает ли?
-	Students Students1;
-	delete &Students1;
+
+	Students *new_people = new Students("имя" , "фамилия" );
+	std::cout << school_popularity << std::endl;
+	delete new_people;
+
+
+	return 0;
 }
 
 

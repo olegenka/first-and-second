@@ -1,4 +1,2 @@
 ﻿  Exam practise 2 sem.cpp
-C:\Users\olegi\source\repos\Exam practise 2 sem\Exam practise 2 sem.cpp(15,18): warning C4244:  =: преобразование "int" в "float", возможна потеря данных
-C:\Users\olegi\source\repos\Exam practise 2 sem\Exam practise 2 sem.cpp(19,18): warning C4244:  =: преобразование "double" в "float", возможна потеря данных
-  Exam practise 2 sem.vcxproj -> C:\Users\olegi\source\repos\Exam practise 2 sem\Debug\Exam practise 2 sem.exe
+  Exam practise 2 sem.vcxproj -> C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\Debug\Exam practise 2 sem.exe
