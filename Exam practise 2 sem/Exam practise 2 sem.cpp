@@ -2,45 +2,49 @@
 #include <iostream>
 using namespace std;
 #include <string>
+#include "virtual_gun.h"
+
+
+
 
 int school_popularity = 0;
+
+
 
 class Students{
 	// Имя студента
 	public: 
          string name;
+
+		 float score;
 	// Фамилия
 	std::string last_name;
 	// Пять промежуточных оценок студента
-	int marks[5]{ 0,0,0,0,0 };
+	int marks[5]{ 5,5,5,5,4 };
 	// Итоговая оценка за семестр
-	int sum(double B[]) 
+	int sum(int *B, int cout=5) 
 	{
 		int su = 0;
-		for (int i = 0; i < sizeof(B) / sizeof(B[1]); i++) 
+		for (int i = 0; i < cout; i++) 
 		su = su + B[i];
 		return(su); 
 	}
-	
-	
-	
-	
-	float End_score(int marks[])
 
+
+
+
+
+
+	template <class T> float Get_score (T *B , T cout = 5)
 	{
-		float t = 0;
-		for (int i = 0; i < 5; i++)
-		{
-			t = t + marks[i];
-		}
-		return t/5;
-	}
-	template<class Type>
-	Type _score(Type b) {
-		
-		return (sizeof(B) / sizeof(B[1]));
+		 //std::cout << "sum(B,cout)" << sum(B, cout) << std::endl;
+		 double sc = static_cast <double>(sum(B, cout)) / cout;
+		 //std::cout << "sc" << sc << std::endl;
+		 return sc;
 		
 	}
+
+
 
 	int ID; //id студента
 
@@ -50,7 +54,7 @@ class Students{
 		name = "no_name";
 		last_name = "no_lastname";
 		school_popularity++;
-	//	 score = score(sizeof(B) / sizeof(B[1])); какая-то чушь 
+        score = Get_score(marks); 
 		ID = school_popularity;
 		
 	}
@@ -66,20 +70,24 @@ class Students{
 };
 
 
-//template <typename T>
-//T best_student(Students study_people [], int number)
-//{
-//  
-//}
 
 
-int main() // создадим пустого студента и принесем в жертву 
+
+int main() 
 {    
-
-	Students *new_people = new Students("имя" , "фамилия" );
+	// студенты
+	Students *new_people = new Students("имя" , "фамилия" ); // создадим пустого студента
 	std::cout << school_popularity << std::endl;
-	delete new_people;
+	std::cout << new_people->score << std::endl;
+	delete new_people; // и принесем в жертву 
 
+	//оружие (virtual_gun)
+	Big_gun gun1;
+	Player player1;
+	player1.Shoot(&gun1);
+	
+
+	
 
 	return 0;
 }

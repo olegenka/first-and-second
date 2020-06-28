@@ -151,8 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Exam practise 2 sem.cpp" />
-    <ClCompile Include="singleton.cpp" />
+    <ClCompile Include="Exam practise 2 sem.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="singleton.h" />
+    <ClInclude Include="virtual_gun.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
