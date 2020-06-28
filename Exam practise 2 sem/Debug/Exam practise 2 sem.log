@@ -1,6 +1,6 @@
 ﻿  Exam practise 2 sem.cpp
-C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\Exam practise 2 sem.cpp(43,11): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\Exam practise 2 sem.cpp(57): message : see reference to function template instantiation 'float Students::Get_score<int>(T *,T)' being compiled
+C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\Exam practise 2 sem.cpp(40,11): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\Exam practise 2 sem.cpp(51): message : see reference to function template instantiation 'float Students::Get_score<int>(T *,T)' being compiled
           with
           [
               T=int
