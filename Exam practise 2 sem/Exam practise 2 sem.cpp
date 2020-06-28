@@ -14,7 +14,19 @@ class Students{
 	// Пять промежуточных оценок студента
 	int marks[5]{ 0,0,0,0,0 };
 	// Итоговая оценка за семестр
+	int sum(double B[]) 
+	{
+		int su = 0;
+		for (int i = 0; i < sizeof(B) / sizeof(B[1]); i++) 
+		su = su + B[i];
+		return(su); 
+	}
+	
+	
+	
+	
 	float End_score(int marks[])
+
 	{
 		float t = 0;
 		for (int i = 0; i < 5; i++)
@@ -22,6 +34,12 @@ class Students{
 			t = t + marks[i];
 		}
 		return t/5;
+	}
+	template<class Type>
+	Type _score(Type b) {
+		
+		return (sizeof(B) / sizeof(B[1]));
+		
 	}
 
 	int ID; //id студента
@@ -32,8 +50,9 @@ class Students{
 		name = "no_name";
 		last_name = "no_lastname";
 		school_popularity++;
-		float score = End_score(marks);
+	//	 score = score(sizeof(B) / sizeof(B[1])); какая-то чушь 
 		ID = school_popularity;
+		
 	}
 
 	~Students() // деструктор
