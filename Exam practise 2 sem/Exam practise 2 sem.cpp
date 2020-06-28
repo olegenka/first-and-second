@@ -3,7 +3,8 @@
 using namespace std;
 #include <string>
 #include "virtual_gun.h"
-
+#include <list>
+#include <iterator>
 
 
 
@@ -29,7 +30,7 @@ class Students{
 		su = su + B[i];
 		return(su); 
 	}
-
+	
 
 
 
@@ -75,16 +76,20 @@ class Students{
 
 int main() 
 {    
+	
 	// студенты
 	Students *new_people = new Students("имя" , "фамилия" ); // создадим пустого студента
 	std::cout << school_popularity << std::endl;
 	std::cout << new_people->score << std::endl;
+	list <Students> spisok;
+	spisok.insert(spisok.end(), new_people);
+    Big_gun gun1;
+	Player player1;
+	player1.Shoot(&gun1);
 	delete new_people; // и принесем в жертву 
 
 	//оружие (virtual_gun)
-	Big_gun gun1;
-	Player player1;
-	player1.Shoot(&gun1);
+	
 	
 
 	
