@@ -28,18 +28,5 @@ public:
 };
 
 
-class Player
-{
-public:
-	void Shoot(Gun* gun)
-	{
 
-		gun->shoot();
-
-	}
-
-
-
-
-};
 

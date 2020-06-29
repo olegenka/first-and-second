@@ -156,6 +156,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="students.h" />
     <ClInclude Include="singleton.h" />
     <ClInclude Include="virtual_gun.h" />
   </ItemGroup>
