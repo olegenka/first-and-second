@@ -156,8 +156,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sort.h" />
+    <ClInclude Include="stack.h" />
     <ClInclude Include="students.h" />
     <ClInclude Include="singleton.h" />
+    <ClInclude Include="toString.h" />
     <ClInclude Include="virtual_gun.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

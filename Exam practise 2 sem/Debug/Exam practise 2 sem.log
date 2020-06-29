@@ -1,8 +1,1 @@
-﻿  Exam practise 2 sem.cpp
-C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\students.h(41,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\students.h(50): message : see reference to function template instantiation 'float Students::Get_score<int>(T *,T)' being compiled
-          with
-          [
-              T=int
-          ]
-  Exam practise 2 sem.vcxproj -> C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\Debug\Exam practise 2 sem.exe
+﻿  Exam practise 2 sem.vcxproj -> C:\Users\MS_PC\Desktop\exam\first-and-second\Exam practise 2 sem\Debug\Exam practise 2 sem.exe

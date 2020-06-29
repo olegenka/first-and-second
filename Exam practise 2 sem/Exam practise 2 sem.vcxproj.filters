@@ -32,5 +32,14 @@
     <ClInclude Include="students.h">
       <Filter>Исходные файлы\source</Filter>
     </ClInclude>
+    <ClInclude Include="sort.h">
+      <Filter>Исходные файлы\source</Filter>
+    </ClInclude>
+    <ClInclude Include="toString.h">
+      <Filter>Исходные файлы\source</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>Исходные файлы\source</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
