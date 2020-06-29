@@ -29,5 +29,8 @@
     <ClInclude Include="singleton.h">
       <Filter>Исходные файлы\source</Filter>
     </ClInclude>
+    <ClInclude Include="students.h">
+      <Filter>Исходные файлы\source</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
