@@ -9,6 +9,7 @@ using namespace std;
 #include "sort.h"
 #include "toString.h"
 #include "stack.h"
+#include "math.h"
 
 
 
@@ -20,10 +21,8 @@ using namespace std;
 
 
 
-
-
-int main() 
-{    
+int main()
+{
 	setlocale(LC_ALL, "ru");
 
 
@@ -35,12 +34,6 @@ int main()
 
 
 
-
-
-
-
-
-
 	/*Students *player2;
 	list <int> *School;
 
@@ -48,7 +41,7 @@ int main()
 
 
 
-	
+	std::cout << Double_to_String(5.32);
 	
 
 	

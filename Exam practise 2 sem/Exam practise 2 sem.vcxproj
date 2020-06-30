@@ -156,6 +156,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="math.h" />
     <ClInclude Include="sort.h" />
     <ClInclude Include="stack.h" />
     <ClInclude Include="students.h" />

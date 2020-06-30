@@ -41,5 +41,8 @@
     <ClInclude Include="stack.h">
       <Filter>Исходные файлы\source</Filter>
     </ClInclude>
+    <ClInclude Include="math.h">
+      <Filter>Исходные файлы\source</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
